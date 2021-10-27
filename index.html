@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<h1>Consultar promedio</h1>
+<body>
+    <div class= "izquierda">
+        <form name="formulario">
+           
+                <label for="parcial 25%">Digite nota parcial 1</label>
+                <input type="text" name="parcial1" id="par1"><br>
+
+                <label for="parcial 20%">Digite nota parcial 2</label>
+                <input type="text"name="parcial2" id="par2"><br>
+
+                <label for="parcial 25%">Digite nota parcial 3</label>
+                <input type="text"name="parcial3" id="par3"><br>
+                
+                <label for="final">Parcial final</label>
+                <input type="text"name="final" id="fin"><br>
+
+                <input type="button" value="Calcular" id="sumar" onclick="suma()">
+                <input type="button" value="Limpiar">
+
+        </form>
+    </div>  
+    <div class="derecha"> 
+        <div>
+           <strong>Suma:</strong>
+            <span id = "sumar"> </span> 
+        </div>
+        
+        <div> 
+            <strong>Promedio:</strong>
+            <span id = "promedio"> </span>
+        </div>
+    </div>
+    <script src="codigo.js">
+    </script>
+</body>
+</html>
